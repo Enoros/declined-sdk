@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "declined"
+version = "1.0.0"
+description = "Official Declined.io REST API client for Python"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "Declined.io" }]
+keywords = ["declined", "payments", "recovery", "sdk"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+]
+dependencies = [
+  "urllib3>=2.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "responses>=0.25"]
+
+[project.urls]
+Homepage = "https://github.com/Enoros/declined-sdk"
+Repository = "https://github.com/Enoros/declined-sdk/tree/main/declined-python"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["declined*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

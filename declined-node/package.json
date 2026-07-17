@@ -1,0 +1,28 @@
+{
+  "name": "declined",
+  "version": "1.0.0",
+  "description": "Official Declined.io REST API client for Node.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": ["declined", "payments", "recovery", "sdk"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Enoros/declined-sdk.git",
+    "directory": "declined-node"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.0.0"
+  }
+}

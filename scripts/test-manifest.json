@@ -1,0 +1,63 @@
+{
+  "expectedMethods": [
+    "events.create",
+    "events.markPaymentRecovered",
+    "customers.list",
+    "recoveries.list",
+    "recoveries.markRecovered",
+    "sequences.list",
+    "webhooks.list",
+    "incentives.list",
+    "analytics.get"
+  ],
+  "sdks": [
+    {
+      "directory": "declined-node",
+      "name": "declined-node",
+      "language": "Node.js",
+      "testCommand": "npm test",
+      "setupCommand": "npm install",
+      "requires": ["node", "npm"]
+    },
+    {
+      "directory": "declined-python",
+      "name": "declined-python",
+      "language": "Python",
+      "testCommand": "python -m pytest tests/ -q",
+      "setupCommand": "python -m pip install -e \".[dev]\"",
+      "requires": ["python"]
+    },
+    {
+      "directory": "declined-ruby",
+      "name": "declined-ruby",
+      "language": "Ruby",
+      "testCommand": "bundle exec rspec",
+      "setupCommand": "bundle install",
+      "requires": ["ruby", "bundle"]
+    },
+    {
+      "directory": "declined-php",
+      "name": "declined-php",
+      "language": "PHP",
+      "testCommand": "composer test",
+      "setupCommand": "composer install",
+      "requires": ["php", "composer"]
+    },
+    {
+      "directory": "declined-go",
+      "name": "declined-go",
+      "language": "Go",
+      "testCommand": "go test ./...",
+      "setupCommand": null,
+      "requires": ["go"]
+    },
+    {
+      "directory": "declined-java",
+      "name": "declined-java",
+      "language": "Java",
+      "testCommand": "mvn -q test",
+      "setupCommand": null,
+      "requires": ["mvn"]
+    }
+  ]
+}

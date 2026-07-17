@@ -1,0 +1,5 @@
+{
+  "org": "Enoros",
+  "name": "declined-sdk",
+  "description": "Official Declined.io SDKs for Node.js, Python, Ruby, PHP, Go, and Java - payment recovery and billing event ingestion"
+}
